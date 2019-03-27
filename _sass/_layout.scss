@@ -191,7 +191,6 @@ pre {
     padding: 5px 10px;
     color: #fff;
     border-radius: 2px;
-    margin-left: 10px;
     &:last-child{
         margin-right: 10px;
     }
@@ -223,8 +222,8 @@ pre {
 }
 
 .post-box {
-    margin-bottom: 1em;
-    padding: 10px 60px;
+    margin-bottom: 0.5em;
+    padding: 10px 30px;
     display: table;
 
     @media screen and (max-width: $on-palm) {
