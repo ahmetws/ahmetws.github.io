@@ -51,7 +51,7 @@ img {
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 400;
-    color: rgba(231, 76, 60, 0.85);
+    color: $grey-color;
 }
 
 h1 {
@@ -106,6 +106,7 @@ pre {
 
 .avatar {
     border-radius: 50%;
+    border: 1px solid $brand-color;
 }
 
 .jumbo {
@@ -118,7 +119,7 @@ pre {
     font-size: 3em;
     font-weight: 800;
     line-height: 0;
-    color: #111;
+    color: $brand-color;
      @media screen and (max-width: $on-palm) {
          font-size: 2em;
     }
@@ -185,6 +186,24 @@ pre {
     }
 }
 
+.home-link {
+    background-color: $brand-color;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 2px;
+    &:last-child{
+        margin-right: 10px;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $h-color;
+    }
+    
+    @media screen and (max-width: $on-palm) {
+        padding: 2px 5px;
+        margin-left: 5px;
+    }
+}
 
 .footer {
     margin-top: 3em;
@@ -200,14 +219,11 @@ pre {
         margin-left: 0.5em;
         font-size: 1em;
     }
-    &:hover {
-        color: $h-color;
-    }
 }
 
 .post-box {
-    margin-bottom: 1em;
-    padding: 10px 60px;
+    margin-bottom: 0.5em;
+    padding: 10px 30px;
     display: table;
 
     @media screen and (max-width: $on-palm) {
