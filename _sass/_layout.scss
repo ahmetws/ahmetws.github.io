@@ -106,6 +106,7 @@ pre {
 
 .avatar {
     border-radius: 50%;
+    border: 1px solid $brand-color;
 }
 
 .jumbo {
@@ -118,7 +119,7 @@ pre {
     font-size: 3em;
     font-weight: 800;
     line-height: 0;
-    color: #111;
+    color: $brand-color;
      @media screen and (max-width: $on-palm) {
          font-size: 2em;
     }
@@ -185,6 +186,25 @@ pre {
     }
 }
 
+.home-link {
+    background-color: $brand-color;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 10px;
+    &:last-child{
+        margin-right: 10px;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $h-color;
+    }
+    
+    @media screen and (max-width: $on-palm) {
+        padding: 2px 5px;
+        margin-left: 5px;
+    }
+}
 
 .footer {
     margin-top: 3em;
