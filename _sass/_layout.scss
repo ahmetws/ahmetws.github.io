@@ -51,7 +51,7 @@ img {
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 400;
-    color: rgba(231, 76, 60, 0.85);
+    color: $grey-color;
 }
 
 h1 {
@@ -219,9 +219,6 @@ pre {
     @media screen and (max-width: $on-palm) {
         margin-left: 0.5em;
         font-size: 1em;
-    }
-    &:hover {
-        color: $h-color;
     }
 }
 
