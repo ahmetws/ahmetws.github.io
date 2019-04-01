@@ -167,17 +167,16 @@ pre {
 }
 
 .menu-link {
-    background-color: $brand-color;
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 2px;
+    padding: 2px 2px;
+    color: $brand-color;
+    border-bottom: 2px solid $brand-color;
     margin-left: 10px;
+    &:hover{
+        color: $brand-color;
+        border-bottom: 2px solid $h-color;
+    }
     &:last-child{
         margin-right: 10px;
-    }
-    &:hover{
-        color: #fff;
-        background-color: $h-color;
     }
     
     @media screen and (max-width: $on-palm) {
@@ -187,16 +186,12 @@ pre {
 }
 
 .home-link {
-    background-color: $brand-color;
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 2px;
-    &:last-child{
-        margin-right: 10px;
-    }
+    padding: 2px 2px;
+    color: $brand-color;
+    border-bottom: 2px solid $brand-color;
     &:hover{
-        color: #fff;
-        background-color: $h-color;
+        color: $brand-color;
+        border-bottom: 2px solid $h-color;
     }
     
     @media screen and (max-width: $on-palm) {
@@ -206,11 +201,10 @@ pre {
 }
 
 .footer {
-    margin-top: 3em;
+    margin-top: 5em;
+    padding-top: 1em;
     border-top: 1px solid $grey-color-light;
 }
-
-
 
 .post-link {
     display: table-cell;
@@ -223,7 +217,7 @@ pre {
 
 .post-box {
     margin-bottom: 0.5em;
-    padding: 10px 30px;
+    padding: 10px 10px;
     display: table;
 
     @media screen and (max-width: $on-palm) {
